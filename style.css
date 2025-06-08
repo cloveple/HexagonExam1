@@ -1,0 +1,181 @@
+/*
+CSS瀏覽器樣式清除
+    來源:http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*字型*/
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.menu{
+  max-width:250px;
+  margin: 0 auto;
+  display:flex;
+}
+.menu li{
+  text-align:center;
+}
+.menu li a{
+  display:block;
+  padding: 24px 20px;
+  color:black;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+.header {
+  display: flex;}
+
+.item {
+height: 640px;
+width: 50%;
+padding-right: 24px;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+}
+.item p{
+  line-height:150%;
+}
+.item h1{
+  font-size:24px;
+  line-height:150%;
+  color:#0027D5;
+}
+.item h2{
+  font-size:28px;
+  line-height:150%;
+  font-weight: bold;
+}
+.item img {
+  width: 100%;
+  height: 640px;
+  object-fit: cover; 
+  display: block;
+}
+.wrap{
+  max-width:636px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.wrap h1{
+  font-size:28px;
+  line-height:150%;
+  font-weight: bold;
+  color:#0027D5;
+}
+.wrap h2{
+  font-size:20px;
+  line-height:150%;
+  font-weight: bold;
+  color:#000000;
+}
+.wrap p{
+  line-height:150%;
+  font-weight: normal;
+}
+.gap0{
+  margin-top: 12px;
+}
+.gap1{
+  margin-top: 24px;
+}
+.card{
+  margin-top: 48px;}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+}
+.wrap button{
+  width: 96px;
+  height: 40px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 1px solid;
+  color: #000000;
+  background-color: #fff;
+}
+.focus{
+    font-weight: bold;
+    text-align: center;
+    border-radius: 24px;
+    padding: 24px;
+    line-height:150%;
+    background-color:#EDEDED;
+  }
+.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.icon{
+  height: 48px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 80px;
+  font-size:32px;
+}
+.footer{
+  height: 72px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .icon {
+    display: none;
+  }
+  .header {
+  display: block;}
+  .item {
+max-height: 400px;
+  width: 100%;}
+}

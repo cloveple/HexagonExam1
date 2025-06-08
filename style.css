@@ -169,13 +169,17 @@ img{
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .icon {
     display: none;
   }
   .header {
   display: block;}
   .item {
-max-height: 400px;
-  width: 100%;}
+    
+max-height: 300px;
+  width: 90%;}
+}
+.footer{
+  font-size:10px;
 }
